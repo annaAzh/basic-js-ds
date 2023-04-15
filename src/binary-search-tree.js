@@ -9,17 +9,10 @@ const { Node } = require('../extensions/list-tree.js');
 class BinarySearchTree {
   constructor() {
       this.roots = null;
-    // this.data = data;
   }
-  // }
+ 
   
   root() {
-    // const newNode = new Node(value);
-    // if (!this.root) {
-      //   this.root = newNode;
-      //   return this;
-      // }
-      // this.root = null;
     return this.roots;
   }
 
@@ -97,7 +90,6 @@ class BinarySearchTree {
         node.right = removeNode(node.right, data);
         return node;
       } else {
-        // equal
         if (!node.left && !node.right) {
           return null;
         }
